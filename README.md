@@ -89,7 +89,6 @@ KIT719_GroupProject/
 ├── README.md
 └── notebook/
     ├── KIT719-Project1_Report.docx
-    ├── KIT719_IR_System.ipynb
     └── Project1.ipynb
 ```
 
@@ -98,7 +97,6 @@ KIT719_GroupProject/
 | File | Description |
 |---|---|
 | `notebook/Project1.ipynb` | Main project notebook containing the current Reuters IR implementation and evaluation |
-| `notebook/KIT719_IR_System.ipynb` | Alternative or earlier IR system implementation |
 | `notebook/KIT719-Project1_Report.docx` | Project report |
 | `LICENSE` | Apache License 2.0 |
 
@@ -269,8 +267,8 @@ Update this table with the final team member names before submission.
 | Team Member | Main Responsibilities |
 |---|---|
 | YoungHyun Kim | Dataset selection, data inspection, text preprocessing, report Sections 1, 2.1, and 3.1 |
-| Member 2 | Document indexing, TF-IDF, BM25, retrieval and ranking, report Sections 2.2–2.3 and 3.2–3.3 |
-| Member 3 | Query processing, spelling correction, query expansion, console application, evaluation, discussion, and report Sections 2.4, 3.4, 4, and 5 |
+| Sirichaisuttikorn, Rewadee | Document indexing, TF-IDF, BM25, retrieval and ranking, report Sections 2.2–2.3 and 3.2–3.3 |
+| Mohammad Ammar Bin Hazrin Chong | Query processing, spelling correction, query expansion, console application, evaluation, discussion, and report Sections 2.4, 3.4, 4, and 5 |
 
 ## Reproducibility Checklist
 
