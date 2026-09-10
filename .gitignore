@@ -1,0 +1,97 @@
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.virtual_documents/
+.jupyter_cache/
+
+# Generated notebook results
+notebook/results/
+
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and analysis caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+
+# ==============================
+# Environment variables / secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+credentials.json
+secrets.json
+
+
+# ==============================
+# VS Code
+# ==============================
+.vscode/
+*.code-workspace
+
+
+# ==============================
+# AI coding tools
+# ==============================
+
+# Codex local configuration
+.codex/
+
+# Claude Code local-only configuration
+.claude/settings.local.json
+.claude/*.local.*
+.claude/worktrees/
+
+
+# ==============================
+# Logs and temporary files
+# ==============================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+
+# ==============================
+# Operating system files
+# ==============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
