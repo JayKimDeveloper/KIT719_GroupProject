@@ -1,0 +1,12 @@
+Tasman Harbor Energy: Purchasing Costs and Currency Exposure
+Document ID: EX02
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+Tasman Harbor Energy is a fictional fuel distributor serving customers in Tasmania. Its monthly purchasing volume is 4,000 barrels. In this simplified scenario, its input price follows the reference crude oil price, which decreased from USD 80 in March to USD 72 per barrel in April.
+
+At an unchanged purchasing volume, the monthly input bill falls from USD 320,000 to USD 288,000. The difference is USD 32,000. This is a purchasing-cost reduction, not a confirmed profit increase. The scenario does not specify the distributor's selling prices, staffing expenses or other operating costs.
+
+Tasman Harbor Energy pays its supplier in US dollars but receives most customer payments in Australian dollars. This creates currency exposure. A weaker Australian dollar makes a fixed US-dollar invoice more expensive when converted into Australian dollars. Consequently, part of the oil-price saving could be offset by exchange-rate changes.
+
+EX05 illustrates currency conversion using a separate USD 100,000 invoice. That invoice is only a worked example; it is not Tasman Harbor Energy's complete monthly purchasing bill. EX08 describes a proposed acquisition, which must not be treated as a completed transaction.

@@ -1,0 +1,12 @@
+Analyst Conclusion and Limits of the Fictional Scenario
+Document ID: EX10
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+The fictional decline in the reference crude price from USD 80 to USD 72 per barrel reduces the assumed input bills of three businesses. At unchanged volumes, the monthly purchasing-cost reductions are USD 32,000 for Tasman Harbor Energy, USD 48,000 for Southern Strait Shipping and USD 80,000 for Derwent Chemical Works.
+
+These reductions cannot be treated as final profit increases. Southern Strait Shipping also experiences lower freight revenue and a port delay. Derwent Chemical Works experiences lower product selling prices and higher borrowing costs. Tasman Harbor Energy faces Australian-dollar currency exposure and a proposed cash acquisition.
+
+The documents support a comparison of different cost pressures, but they do not provide complete financial statements. Final net profits, acquisition affordability and the actual currency conversion of every transaction remain unknown. Some calculations deliberately simplify fuel pricing, manufacturing conversion and loan interest.
+
+All values refer to invented, dated scenario conditions. None establishes today's oil price, exchange rate, interest rate or weather. A grounded chatbot should state these limits, preserve currency and time units, and cite the particular passages supporting its claims. These examples are useful for practising document writing and retrieval, but they are not evidence of actual company performance or student-authored assignment work.

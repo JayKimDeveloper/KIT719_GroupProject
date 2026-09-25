@@ -1,0 +1,12 @@
+Southern Strait Shipping: Fuel Costs and Freight Revenue
+Document ID: EX04
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+Southern Strait Shipping is a fictional cargo operator connecting Hobart and Melbourne. It transports products for Derwent Chemical Works and uses berth services supplied by Hobart Port Services. The company purchases 6,000 barrels of fuel per month.
+
+The exercise assumes that its fuel price follows the reference crude price directly. A decline from USD 80 to USD 72 per barrel therefore reduces the monthly fuel bill from USD 480,000 to USD 432,000. The monthly fuel saving is USD 48,000.
+
+During the same period, the average freight charge falls from USD 1,600 to USD 1,500 per shipment. With 400 shipments per month in both periods, freight revenue decreases from USD 640,000 to USD 600,000. The revenue reduction is USD 40,000.
+
+The combined change in revenue minus fuel costs is therefore an improvement of USD 8,000 per month, before other expenses. A separate April port disruption added AUD 24,000 in waiting costs, as described in EX06. Those figures use different currencies and cannot be combined directly without an explicit conversion rate. EX05 supplies an illustrative April exchange rate, but this scenario does not specify the actual conversion date for the waiting costs.

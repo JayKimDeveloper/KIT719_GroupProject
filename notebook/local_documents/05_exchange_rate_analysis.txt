@@ -1,0 +1,12 @@
+Australian Dollar Exposure: A Worked Invoice Example
+Document ID: EX05
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+This scenario defines the March exchange rate as 1 AUD = 0.65 USD and the April rate as 1 AUD = 0.625 USD. The Australian dollar therefore weakens against the US dollar in this exercise. These are invented historical scenario rates, not today's market rates.
+
+Consider an unchanged supplier invoice of USD 100,000. At the March rate, the Australian-dollar payment is 100,000 divided by 0.65, or approximately AUD 153,846.15. At the April rate, it is 100,000 divided by 0.625, or AUD 160,000. The same US-dollar invoice now costs approximately AUD 6,153.85 more.
+
+Tasman Harbor Energy is exposed to this type of change because it pays its supplier in US dollars and receives most customer payments in Australian dollars. EX02 describes this business arrangement. The USD 100,000 invoice is a separate illustration and must not be substituted for the company's full monthly purchasing bill.
+
+Southern Strait Shipping also reports costs and revenues in multiple currencies across these example documents. Comparisons must preserve currency units and identify any rate used for conversion. A chatbot should decline to give the current AUD/USD exchange rate from this document because it contains only dated fictional rates.

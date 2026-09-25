@@ -1,0 +1,12 @@
+Derwent Chemical Works: Feedstock Savings and Lower Selling Prices
+Document ID: EX03
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+Derwent Chemical Works is a fictional manufacturer in Hobart. The company purchases 10,000 barrels of oil-derived feedstock and sells 10,000 standard product units per month. For this exercise only, one barrel of feedstock is assumed to produce one standard unit without waste. This is a teaching simplification, not a description of a real chemical process.
+
+The feedstock price decreased from USD 80 to USD 72 per barrel between March and April. At a fixed volume, this reduces monthly feedstock costs by USD 80,000. However, the product selling price also decreased from USD 100 to USD 95 per unit. At an unchanged sales volume, monthly sales revenue falls by USD 50,000.
+
+Combining these two changes gives a USD 30,000 improvement in revenue minus feedstock costs. This figure excludes labour, utilities, transport, financing and taxes. It should not be described as the company's final net profit.
+
+Southern Strait Shipping transports the manufacturer's products, creating a direct business relationship between the two fictional companies. EX04 explains the shipping company's own cost changes. EX06 describes a port delay affecting a shipment for Derwent Chemical Works.

@@ -1,0 +1,12 @@
+Hobart Port Services: A Three-Day Cargo Delay
+Document ID: EX06
+Scenario date: 18 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+On 15 April in this fictional scenario, a berth operated by Hobart Port Services became unavailable because of equipment maintenance. A Southern Strait Shipping vessel waited for three days before loading could resume. Its cargo included products from Derwent Chemical Works destined for Melbourne.
+
+The waiting cost was AUD 8,000 per day. Southern Strait Shipping therefore incurred AUD 24,000 in additional waiting costs. The scenario assigns this expense to the shipping company. It does not state that Derwent Chemical Works paid a penalty, lost a customer or suffered a quantified revenue loss.
+
+The delay demonstrates that cheaper fuel does not remove all transport risks. Southern Strait Shipping's monthly fuel saving is expressed in US dollars in EX04, whereas this waiting cost is expressed in Australian dollars. A comparison requires a stated exchange-rate assumption rather than simply subtracting the two numbers.
+
+The equipment maintenance was the stated cause of the delay. The document provides no evidence of a strike, severe weather or negligence. It also provides no real-time berth availability. A question about today's Hobart weather cannot be answered from this fictional port incident.
