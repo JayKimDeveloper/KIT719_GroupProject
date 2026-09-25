@@ -1,0 +1,12 @@
+Derwent Chemical Works: Annual Financing Costs
+Document ID: EX07
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+Derwent Chemical Works has a fictional AUD 2,000,000 loan. The annual interest rate increased from 6.0 percent to 7.5 percent at the beginning of April. This example uses simple interest on an unchanged principal and excludes repayments, fees and compounding.
+
+At 6.0 percent, the annual interest expense is AUD 120,000. At 7.5 percent, it becomes AUD 150,000. The increase is AUD 30,000 per year. Dividing by twelve gives an illustrative increase of AUD 2,500 per month; this is not a stated payment schedule.
+
+EX03 describes a monthly USD 30,000 improvement in the manufacturer's revenue minus feedstock costs. The financing increase here is an annual Australian-dollar amount. These figures must be aligned to the same time period and currency before they can be combined. The two documents do not establish the company's final net profit.
+
+This example connects the same manufacturer to two different drivers: oil-derived feedstock prices and borrowing costs. A cross-document question can ask why lower feedstock costs alone are insufficient to determine overall profitability. The document does not report any real Reserve Bank decision or current lending rate.

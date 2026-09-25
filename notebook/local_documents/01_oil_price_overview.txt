@@ -1,0 +1,12 @@
+Oil Price Overview for the Tasmania Trade Scenario
+Document ID: EX01
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+In this scenario, the reference crude oil price fell from USD 80 per barrel in March to USD 72 per barrel in April. The scenario attributes this change to increased supply and weaker industrial demand. It does not establish that the same change occurred in the real market.
+
+Three fictional businesses have different exposure to this price movement. Tasman Harbor Energy distributes fuel and purchases 4,000 barrels per month. Southern Strait Shipping operates cargo services and purchases 6,000 barrels of fuel per month. Derwent Chemical Works purchases 10,000 barrels of oil-derived feedstock per month. For simplicity, this exercise assumes that all three input prices follow the reference crude price directly.
+
+Lower input prices could reduce each company's purchasing costs. The effect on profits also depends on selling prices, exchange rates, shipment delays and financing costs. Therefore, a fall in crude prices alone does not prove that every company's profits increased.
+
+This document provides a dated reference price. It contains no real-time oil price information. EX02, EX03 and EX04 explain the separate company calculations, while EX05 discusses currency exposure.

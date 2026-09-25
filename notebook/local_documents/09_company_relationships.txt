@@ -1,0 +1,14 @@
+Relationship Index for the Fictional Tasmania Trade Scenario
+Document ID: EX09
+Scenario date: 30 April 2026
+Provenance: AI-generated fictional learning example. All companies, events and figures below are invented scenario data, not verified news or current market information.
+
+This document summarises relationships explicitly described in the other example documents. It introduces no new transaction or financial result.
+
+Southern Strait Shipping transports products for Derwent Chemical Works, as stated in EX03 and EX04. Southern Strait Shipping uses berth services supplied by Hobart Port Services, as stated in EX04. EX06 describes a maintenance delay at one of those berths that affected a vessel carrying the manufacturer's products to Melbourne. These statements connect a manufacturer, a carrier and a port service provider.
+
+Tasman Harbor Energy distributes fuel in Tasmania and has proposed acquiring Ocean Route Logistics, as described in EX02 and EX08. The proposal is not a completed ownership relationship. Ocean Route Logistics provides warehouse and delivery services in Hobart; Southern Strait Shipping is a different business.
+
+The companies also share locations and exposure to oil prices. Those shared attributes do not establish contracts between every pair of companies. In particular, these examples do not state that Tasman Harbor Energy supplies Southern Strait Shipping or Derwent Chemical Works.
+
+A document-entity graph can use repeated company names to locate relevant passages. However, a shared-name path alone cannot prove the transport, service or acquisition relationships. The original passages remain necessary evidence.

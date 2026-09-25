@@ -1,0 +1,134 @@
+[
+  {
+    "id": "Q01",
+    "question": "What happened to the reference crude oil price from March to April, and what reasons does the scenario give for the change?",
+    "expected_document_ids": [
+      "local:01_oil_price_overview.txt"
+    ],
+    "reference_answer": "The reference crude oil price fell from USD 80 per barrel in March to USD 72 per barrel in April. The scenario attributes the fall to increased supply and weaker industrial demand.",
+    "reference_quote": "In this scenario, the reference crude oil price fell from USD 80 per barrel in March to USD 72 per barrel in April. The scenario attributes this change to increased supply and weaker industrial demand.",
+    "history": []
+  },
+  {
+    "id": "Q02",
+    "question": "How much did Tasman Harbor Energy's monthly input bill decrease from March to April, and why should this not be treated as a confirmed profit increase?",
+    "expected_document_ids": [
+      "local:02_energy_company_analysis.txt"
+    ],
+    "reference_answer": "Its monthly input bill decreased from USD 320,000 to USD 288,000, a reduction of USD 32,000. This is only a purchasing-cost reduction because selling prices, staffing expenses and other operating costs are not specified.",
+    "reference_quote": "At an unchanged purchasing volume, the monthly input bill falls from USD 320,000 to USD 288,000. The difference is USD 32,000. This is a purchasing-cost reduction, not a confirmed profit increase.",
+    "history": []
+  },
+  {
+    "id": "Q03",
+    "question": "How did the feedstock cost and product selling price changes affect Derwent Chemical Works' revenue minus feedstock costs?",
+    "expected_document_ids": [
+      "local:03_petrochemical_analysis.txt"
+    ],
+    "reference_answer": "The lower feedstock price reduced monthly feedstock costs by USD 80,000, while the lower selling price reduced monthly sales revenue by USD 50,000. Together, these changes improved revenue minus feedstock costs by USD 30,000 before other expenses.",
+    "reference_quote": "The feedstock price decreased from USD 80 to USD 72 per barrel between March and April. At a fixed volume, this reduces monthly feedstock costs by USD 80,000. However, the product selling price also decreased from USD 100 to USD 95 per unit. At an unchanged sales volume, monthly sales revenue falls by USD 50,000. Combining these two changes gives a USD 30,000 improvement in revenue minus feedstock costs.",
+    "history": []
+  },
+  {
+    "id": "Q04",
+    "question": "What was the combined effect of lower fuel costs and lower freight revenue on Southern Strait Shipping before other expenses?",
+    "expected_document_ids": [
+      "local:04_shipping_analysis.txt"
+    ],
+    "reference_answer": "Southern Strait Shipping saved USD 48,000 per month on fuel, while freight revenue decreased by USD 40,000. The combined effect was an improvement of USD 8,000 per month before other expenses.",
+    "reference_quote": "The monthly fuel saving is USD 48,000. During the same period, the average freight charge falls from USD 1,600 to USD 1,500 per shipment. With 400 shipments per month in both periods, freight revenue decreases from USD 640,000 to USD 600,000. The revenue reduction is USD 40,000. The combined change in revenue minus fuel costs is therefore an improvement of USD 8,000 per month, before other expenses.",
+    "history": []
+  },
+  {
+    "id": "Q05",
+    "question": "How did the weaker Australian dollar change the AUD cost of the unchanged USD 100,000 invoice in the worked example?",
+    "expected_document_ids": [
+      "local:05_exchange_rate_analysis.txt"
+    ],
+    "reference_answer": "At 1 AUD = 0.65 USD, the invoice cost about AUD 153,846.15. At 1 AUD = 0.625 USD, it cost AUD 160,000. The weaker Australian dollar therefore increased the AUD cost by about AUD 6,153.85.",
+    "reference_quote": "At the March rate, the Australian-dollar payment is 100,000 divided by 0.65, or approximately AUD 153,846.15. At the April rate, it is 100,000 divided by 0.625, or AUD 160,000. The same US-dollar invoice now costs approximately AUD 6,153.85 more.",
+    "history": []
+  },
+  {
+    "id": "Q06",
+    "question": "What caused the three-day port delay, and how much additional waiting cost did Southern Strait Shipping incur?",
+    "expected_document_ids": [
+      "local:06_port_delay_analysis.txt"
+    ],
+    "reference_answer": "The delay was caused by equipment maintenance that made a Hobart Port Services berth unavailable. Southern Strait Shipping waited three days and incurred AUD 24,000 in additional waiting costs at AUD 8,000 per day.",
+    "reference_quote": "On 15 April in this fictional scenario, a berth operated by Hobart Port Services became unavailable because of equipment maintenance. A Southern Strait Shipping vessel waited for three days before loading could resume. The waiting cost was AUD 8,000 per day. Southern Strait Shipping therefore incurred AUD 24,000 in additional waiting costs.",
+    "history": []
+  },
+  {
+    "id": "Q07",
+    "question": "How did the interest rate increase affect Derwent Chemical Works' annual financing cost?",
+    "expected_document_ids": [
+      "local:07_interest_rate_analysis.txt"
+    ],
+    "reference_answer": "The annual interest rate rose from 6.0% to 7.5% on an unchanged AUD 2,000,000 principal. Annual interest expense increased from AUD 120,000 to AUD 150,000, an increase of AUD 30,000 per year, or an illustrative AUD 2,500 per month.",
+    "reference_quote": "At 6.0 percent, the annual interest expense is AUD 120,000. At 7.5 percent, it becomes AUD 150,000. The increase is AUD 30,000 per year. Dividing by twelve gives an illustrative increase of AUD 2,500 per month.",
+    "history": []
+  },
+  {
+    "id": "Q08",
+    "question": "Has Tasman Harbor Energy completed the acquisition of Ocean Route Logistics, and what does the proposal specify?",
+    "expected_document_ids": [
+      "local:08_acquisition_analysis.txt"
+    ],
+    "reference_answer": "No. Tasman Harbor Energy proposed purchasing Ocean Route Logistics for AUD 1,200,000 in cash, but the transaction remains subject to due diligence and agreement and has not been completed.",
+    "reference_quote": "Tasman Harbor Energy proposed purchasing Ocean Route Logistics for AUD 1,200,000 in this fictional scenario. The proposal specifies a cash purchase, not a new acquisition loan. It remains subject to due diligence and agreement between the parties. As of this document's scenario date, the acquisition has not been completed.",
+    "history": []
+  },
+  {
+    "id": "Q09",
+    "question": "How are Derwent Chemical Works and Hobart Port Services connected through Southern Strait Shipping?",
+    "expected_document_ids": [
+      "local:04_shipping_analysis.txt",
+      "local:06_port_delay_analysis.txt"
+    ],
+    "reference_answer": "Southern Strait Shipping transports products for Derwent Chemical Works and uses berth services supplied by Hobart Port Services. A maintenance problem at one of those berths delayed a Southern Strait Shipping vessel carrying Derwent Chemical Works products to Melbourne.",
+    "reference_quote": "Southern Strait Shipping is a fictional cargo operator connecting Hobart and Melbourne. It transports products for Derwent Chemical Works and uses berth services supplied by Hobart Port Services. | A Southern Strait Shipping vessel waited for three days before loading could resume. Its cargo included products from Derwent Chemical Works destined for Melbourne.",
+    "history": []
+  },
+  {
+    "id": "Q10",
+    "question": "Why does the fall in crude oil prices not prove that all three businesses increased their final profits?",
+    "expected_document_ids": [
+      "local:10_scenario_conclusion.txt"
+    ],
+    "reference_answer": "The lower oil price reduced input costs, but each business also faces other factors. Southern Strait Shipping had lower freight revenue and a port delay, Derwent Chemical Works had lower selling prices and higher borrowing costs, and Tasman Harbor Energy had currency exposure and a proposed acquisition. Complete financial statements are not provided, so final net profits cannot be determined.",
+    "reference_quote": "These reductions cannot be treated as final profit increases. Southern Strait Shipping also experiences lower freight revenue and a port delay. Derwent Chemical Works experiences lower product selling prices and higher borrowing costs. Tasman Harbor Energy faces Australian-dollar currency exposure and a proposed cash acquisition.",
+    "history": []
+  },
+  {
+    "id": "Q11",
+    "question": "What about its borrowing costs?",
+    "expected_document_ids": [
+      "local:07_interest_rate_analysis.txt"
+    ],
+    "reference_answer": "For Derwent Chemical Works, annual interest expense increased from AUD 120,000 to AUD 150,000 when the annual rate rose from 6.0% to 7.5%. This is an increase of AUD 30,000 per year, or an illustrative AUD 2,500 per month.",
+    "reference_quote": "Derwent Chemical Works has a fictional AUD 2,000,000 loan. The annual interest rate increased from 6.0 percent to 7.5 percent at the beginning of April. At 6.0 percent, the annual interest expense is AUD 120,000. At 7.5 percent, it becomes AUD 150,000.",
+    "history": [
+      {
+        "role": "user",
+        "content": "How did lower feedstock prices affect Derwent Chemical Works?"
+      },
+      {
+        "role": "assistant",
+        "content": "The lower feedstock price reduced Derwent Chemical Works' monthly feedstock costs by USD 80,000, although this alone does not determine final profit."
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "question": "Can Southern Strait Shipping's USD 48,000 monthly fuel saving be directly offset against its AUD 24,000 port waiting cost?",
+    "expected_document_ids": [
+      "local:04_shipping_analysis.txt",
+      "local:06_port_delay_analysis.txt",
+      "local:05_exchange_rate_analysis.txt"
+    ],
+    "reference_answer": "No. The fuel saving is stated in US dollars while the waiting cost is in Australian dollars, so they cannot be directly subtracted. A stated exchange-rate assumption is required. EX05 provides an illustrative April rate, but EX04 notes that the actual conversion date for the waiting cost is not specified.",
+    "reference_quote": "A separate April port disruption added AUD 24,000 in waiting costs, as described in EX06. Those figures use different currencies and cannot be combined directly without an explicit conversion rate. EX05 supplies an illustrative April exchange rate, but this scenario does not specify the actual conversion date for the waiting costs. | Southern Strait Shipping's monthly fuel saving is expressed in US dollars in EX04, whereas this waiting cost is expressed in Australian dollars. A comparison requires a stated exchange-rate assumption rather than simply subtracting the two numbers.",
+    "history": []
+  }
+]
