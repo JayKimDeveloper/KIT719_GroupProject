@@ -1,137 +1,121 @@
-# KIT719 Group Project — Information Retrieval System
+# KIT719 Group Project — RAG Chatbot with Graph-Based Reasoning
 
-This repository contains the group project for **KIT719: Natural Language Processing and Generative AI** at the University of Tasmania.
+This repository contains **Project 2 for KIT719: Natural Language Processing and Generative AI** at the University of Tasmania.
 
-The project implements an Information Retrieval (IR) system using the **NLTK Reuters Corpus**. It includes text preprocessing, document indexing, TF-IDF and BM25 ranking, query processing, and performance evaluation.
+The project implements a conversational **Retrieval-Augmented Generation (RAG) chatbot** using the NLTK Reuters Corpus and student-created local documents.
 
-## Project Objectives
+The system combines semantic retrieval, a knowledge graph, SPARQL, Personalised PageRank, and an open-source LLM to answer natural-language questions with supporting evidence.
 
-The project aims to:
-
-- load and inspect the Reuters text collection;
-- preprocess natural-language documents and queries;
-- construct an inverted index and TF-IDF document matrix;
-- retrieve and rank documents using TF-IDF cosine similarity and BM25;
-- support spelling correction and query expansion;
-- provide an interactive console-based search interface; and
-- evaluate retrieval performance using standard IR metrics.
+---
 
 ## Main Features
 
-### 1. Dataset Selection
+- Reuters Corpus with additional local knowledge documents
+- NLP preprocessing reused from Project 1
+- TF-IDF lexical retrieval baseline
+- MiniLM dense semantic retrieval
+- RDF document-entity knowledge graph
+- SPARQL graph queries
+- Personalised PageRank for graph-assisted ranking
+- Prompt-driven evidence selection
+- Qwen2.5 answer generation
+- Gradio chatbot interface
+- Source/evidence display
+- Graph ON/OFF comparison
+- Evaluation of retrieval, grounding and answer correctness
+- Graceful error handling
 
-- Uses the Reuters Corpus provided by NLTK.
-- Loads Reuters documents and category labels.
-- Supports inspection of dataset size, categories, and document content.
+---
 
-### 2. Text Preprocessing
+## System Specification
 
-The preprocessing pipeline includes:
+| Component | Configuration |
+|---|---|
+| Dataset | NLTK Reuters + 10 local documents |
+| Total documents | 10,798 |
+| Embedding model | `sentence-transformers/all-MiniLM-L6-v2` |
+| Generator | `Qwen/Qwen2.5-0.5B-Instruct` |
+| Chunk size | 180 tokens |
+| Chunk overlap | 30 tokens |
+| Dense retrieval | Cosine similarity |
+| NER | spaCy `en_core_web_sm` |
+| Entity types | ORG, PERSON, GPE, LOC |
+| Graph format | RDF |
+| Graph query | SPARQL |
+| Graph analysis | Personalised PageRank |
+| Graph weight | 0.15 |
+| Evidence limit | 3 passages |
+| Interface | Gradio |
 
-- lowercasing;
-- tokenisation;
-- punctuation and non-alphabetic token removal;
-- stop-word removal;
-- Porter stemming; and
-- WordNet lemmatisation with part-of-speech information.
+The graph-enabled retrieval score is:
 
-### 3. Document Indexing
+```text
+combined score =
+cosine similarity + 0.15 × normalised graph score
+```
 
-The system constructs:
-
-- an inverted index;
-- a term vocabulary;
-- a sparse TF-IDF document-term matrix; and
-- document statistics required for BM25 ranking.
-
-### 4. Retrieval and Ranking
-
-Two ranking methods are implemented:
-
-- **TF-IDF with cosine similarity**
-- **BM25**
-
-The system returns the highest-ranked Reuters documents for a user query.
-
-### 5. Query Processing
-
-The query processing module includes:
-
-- query preprocessing;
-- spelling correction;
-- WordNet-based query expansion; and
-- an interactive console search application.
-
-### 6. Performance Evaluation
-
-The evaluation module compares different combinations of:
-
-- no stemming or lemmatisation;
-- Porter stemming;
-- WordNet lemmatisation;
-- TF-IDF ranking; and
-- BM25 ranking.
-
-The implemented metrics include:
-
-- Precision@K;
-- Recall@K;
-- F1@K; and
-- Mean Average Precision (MAP).
-
-Evaluation results can be presented using comparison tables and charts.
+---
 
 ## Repository Structure
 
 ```text
 KIT719_GroupProject/
-├── LICENSE
 ├── README.md
-└── notebook/
-    ├── KIT719-Project1_Report.docx
-    └── Project1.ipynb
+├── LICENSE
+├── notebook/
+│   └── KIT719_IR_System.ipynb
+├── local_documents/
+├── evaluation_questions.json
+├── results/
+│   ├── evaluation.csv
+│   ├── traces.json
+│   └── graph_stats.json
+└── knowledge_graph.ttl
 ```
 
-### Main Files
+> Student-created documents must remain local and must not be uploaded to a public website or public repository.
 
-| File | Description |
-|---|---|
-| `notebook/Project1.ipynb` | Main project notebook containing the current Reuters IR implementation and evaluation |
-| `notebook/KIT719-Project1_Report.docx` | Project report |
-| `LICENSE` | Apache License 2.0 |
-
-> Before final submission, the team should identify one notebook as the final implementation and ensure that all reported evaluation results match that notebook.
+---
 
 ## Requirements
 
 Recommended environment:
 
-- Python 3.12
+- Python 3.11 or later
 - Jupyter Notebook
 - NLTK
-- NumPy
-- SciPy
+- spaCy
+- sentence-transformers
+- transformers
+- PyTorch
+- RDFLib
+- NetworkX
 - scikit-learn
+- pandas
+- NumPy
+- Gradio
 - Matplotlib
 
-## Installation
+---
 
-### 1. Clone the Repository
+## Local Installation
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/JayKimDeveloper/KIT719_GroupProject.git
 cd KIT719_GroupProject
 ```
 
-To update an existing local copy:
+To update an existing copy:
 
 ```bash
 git pull origin main
 ```
 
-### 2. Create a Virtual Environment
+### 2. Create a virtual environment
 
-#### macOS or Linux
+#### macOS / Linux
 
 ```bash
 python3 -m venv .venv
@@ -145,21 +129,22 @@ py -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-### 3. Install Python Packages
+### 3. Install dependencies
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install notebook ipykernel nltk numpy scipy scikit-learn matplotlib
+python -m pip install notebook ipykernel nltk spacy sentence-transformers transformers torch rdflib networkx scikit-learn pandas numpy gradio matplotlib
 ```
 
-On Homebrew-managed Python installations, install packages inside the virtual environment. Do not install project packages into the system Python environment.
-
-### 4. Download Required NLTK Resources
-
-Run:
+### 4. Install the spaCy model
 
 ```bash
-python - <<'PY'
+python -m spacy download en_core_web_sm
+```
+
+### 5. Download NLTK resources
+
+```python
 import nltk
 
 resources = [
@@ -175,19 +160,29 @@ resources = [
 
 for resource in resources:
     nltk.download(resource)
-
-print("NLTK resources installed successfully.")
-PY
 ```
 
-### 5. Register the Jupyter Kernel
+---
 
-```bash
-python -m ipykernel install \
-  --user \
-  --name kit719-ir \
-  --display-name "Python 3.12 (KIT719)"
+## Local Document Setup
+
+Place the ten student-created text files inside:
+
+```text
+local_documents/
 ```
+
+Also ensure that:
+
+```text
+evaluation_questions.json
+```
+
+is available in the location expected by the notebook.
+
+The local documents must be processed together with the Reuters Corpus but must remain stored locally.
+
+---
 
 ## Running the Project
 
@@ -197,107 +192,156 @@ Start Jupyter Notebook from the repository root:
 python -m notebook
 ```
 
-In the browser:
+Then:
 
-1. Open the `notebook` directory.
-2. Open `Project1.ipynb`.
-3. Select **Python 3.12 (KIT719)** as the kernel.
-4. Run the notebook cells in order.
+1. Open `KIT719_IR_System.ipynb`.
+2. Select the correct Python environment/kernel.
+3. Run the notebook cells in order.
+4. Load the Reuters Corpus and local documents.
+5. Run preprocessing and chunking.
+6. Generate MiniLM embeddings.
+7. Build the RDF knowledge graph.
+8. Run SPARQL and Personalised PageRank components.
+9. Load the Qwen model.
+10. Launch the Gradio chatbot.
 
-To run all cells:
+A successful document-loading stage should contain:
 
 ```text
-Kernel → Restart Kernel and Run All Cells
+Reuters documents: 10,788
+Local documents: 10
+Total documents: 10,798
 ```
 
-## Console Search Application
+---
 
-The notebook contains an interactive console application. When the following function is executed:
+## Using the Chatbot
+
+The Gradio interface supports natural-language questions and includes a **Graph ON/OFF** option.
+
+### Graph OFF
+
+```text
+Question
+→ Dense Retrieval
+→ Evidence Selection
+→ Qwen
+→ Answer
+```
+
+### Graph ON
+
+```text
+Question
+→ Dense Retrieval
+→ SPARQL Expansion
+→ Personalised PageRank
+→ Evidence Selection
+→ Qwen
+→ Answer
+```
+
+The interface also displays retrieved evidence and graph-tool execution information.
+
+The required welcome message is:
+
+```text
+welcome to KIT848
+```
+
+---
+
+## Evaluation
+
+The system is evaluated using **12 prepared questions** under:
+
+- Dense RAG
+- Dense + Graph RAG
+
+The evaluation considers:
+
+- context recall;
+- expected-document coverage;
+- SPARQL execution;
+- citation validity;
+- answer groundedness;
+- factual correctness; and
+- response time.
+
+Evaluation outputs are stored in:
+
+```text
+results/evaluation.csv
+results/traces.json
+results/graph_stats.json
+```
+
+Detailed evaluation results and failure analysis are provided in the **Project 2 report**.
+
+---
+
+## Troubleshooting
+
+### Missing spaCy model
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+### Missing NLTK resource
 
 ```python
-run_console_app()
+import nltk
+nltk.download("RESOURCE_NAME")
 ```
 
-the notebook waits for a query:
+### Local documents not found
+
+Check that the ten `.txt` files are stored in:
 
 ```text
-User Query:
+local_documents/
 ```
 
-Example:
+### Invalid model output
 
-```text
-grain trade policy
-```
+Qwen may occasionally return malformed JSON or invalid source labels. The application should display a warning rather than crash.
 
-Enter the following command to close the console application:
+Check the evidence table and raw model output when debugging.
 
-```text
-exit
-```
+---
 
-The notebook may appear to stop during **Run All** because the console application is waiting for keyboard input. To run the complete notebook without interaction, temporarily comment out the call:
+## Before Submission
 
-```python
-# run_console_app()
-```
+Confirm that:
 
-## Example Workflow
+- the notebook runs from a fresh local environment;
+- all ten local documents are available;
+- local documents have not been uploaded publicly;
+- SPARQL and graph retrieval run correctly;
+- the Gradio interface works;
+- the welcome message is exactly `welcome to KIT848`;
+- all 12 evaluation questions can be executed; and
+- evaluation outputs match the final report.
 
-```text
-Reuters documents
-        ↓
-Text preprocessing
-        ↓
-Inverted index and TF-IDF matrix
-        ↓
-Query preprocessing
-        ↓
-TF-IDF or BM25 ranking
-        ↓
-Top-ranked documents
-        ↓
-Performance evaluation
-```
+---
 
-## Team Responsibilities
+## Team Members
 
-Update this table with the final team member names before submission.
-
-| Team Member | Main Responsibilities |
+| Student ID | Name |
 |---|---|
-| YoungHyun Kim | Dataset selection, data inspection, text preprocessing, report Sections 1, 2.1, and 3.1 |
-| Sirichaisuttikorn, Rewadee | Document indexing, TF-IDF, BM25, retrieval and ranking, report Sections 2.2–2.3 and 3.2–3.3 |
-| Mohammad Ammar Bin Hazrin Chong | Query processing, spelling correction, query expansion, console application, evaluation, discussion, and report Sections 2.4, 3.4, 4, and 5 |
+| 774353 | Younghyun Kim |
+| 760308 | Mohammad Ammar Bin Hazrin Chong |
+| 752937 | Rewadee Sirichaisuttikorn |
 
-## Reproducibility Checklist
-
-Before submission, confirm that:
-
-- the notebook runs from a fresh kernel without unexpected errors;
-- all required NLTK resources are documented;
-- one notebook is clearly identified as the final implementation;
-- TF-IDF evaluation uses the same cosine-similarity method as the search function;
-- report tables and charts match the latest notebook output;
-- interactive cells are clearly identified;
-- team member names and student details are complete;
-- generated result files are included where required; and
-- AI-assisted work is acknowledged according to the unit requirements.
-
-## Known Limitations
-
-Potential limitations of the current implementation include:
-
-- spelling correction may select an unintended word when several candidates have the same edit distance;
-- WordNet query expansion may introduce terms that are not relevant to the original query context;
-- evaluation results depend on the relevance definition derived from Reuters categories;
-- an interactive input cell can interrupt automatic notebook execution; and
-- the two notebooks may contain different implementation choices and should be consolidated before submission.
+---
 
 ## Academic Use
 
-This repository was created for a university assessment. Any use of this code should comply with the University of Tasmania's academic integrity requirements.
+This repository was created for a University of Tasmania assessment.
+
+Use of the project must comply with the University's academic integrity requirements.
 
 ## License
 
-This project is licensed under the **Apache License 2.0**. See the `LICENSE` file for details.
+See the `LICENSE` file for licence information.
