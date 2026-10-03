@@ -63,7 +63,7 @@ KIT719_GroupProject/
 ├── README.md
 ├── LICENSE
 ├── notebook/
-│   └── KIT719_IR_System.ipynb
+│   └── Project2_Colab.ipynb
 ├── local_documents/
 ├── evaluation_questions.json
 ├── results/
@@ -194,7 +194,7 @@ python -m notebook
 
 Then:
 
-1. Open `KIT719_IR_System.ipynb`.
+1. Open `Project2_Colab.ipynb`.
 2. Select the correct Python environment/kernel.
 3. Run the notebook cells in order.
 4. Load the Reuters Corpus and local documents.
@@ -246,7 +246,7 @@ The interface also displays retrieved evidence and graph-tool execution informat
 The required welcome message is:
 
 ```text
-welcome to KIT848
+welcome to KIT719
 ```
 
 ---
@@ -320,7 +320,7 @@ Confirm that:
 - local documents have not been uploaded publicly;
 - SPARQL and graph retrieval run correctly;
 - the Gradio interface works;
-- the welcome message is exactly `welcome to KIT848`;
+- the welcome message is exactly `welcome to KIT719`;
 - all 12 evaluation questions can be executed; and
 - evaluation outputs match the final report.
 
